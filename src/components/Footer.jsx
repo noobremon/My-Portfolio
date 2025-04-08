@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaXTwitter, FaLinkedin } from "react-icons/fa6";
+import { FaInstagram, FaXTwitter, FaLinkedin, FaGithub, } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -20,6 +20,14 @@ const Footer = () => {
         rel="noopener noreferrer"
       >
         <FaLinkedin size={24} />
+      </a>
+
+      <a
+        href="https://github.com/noobremon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaGithub size={24} />
       </a>
     </footer>
   );
