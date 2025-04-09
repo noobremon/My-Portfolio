@@ -1,4 +1,3 @@
-
 import {
   logo,
   backend,
@@ -154,6 +153,19 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Frontend Developer Intern",
+    company_name: "Tech Solutions Inc.",
+    icon: tekisky, // Replace with the appropriate icon if available
+    iconBg: "#E6DEDD",
+    date: "June 2022 - August 2022",
+    points: [
+      "Developed and optimized user interfaces for web applications using React.js and Tailwind CSS.",
+      "Collaborated with backend developers to integrate APIs and ensure seamless data flow.",
+      "Conducted usability testing and implemented feedback to improve user experience.",
+      "Created reusable components to streamline development and maintain consistency across projects.",
+    ],
+  },
+  {
     title: "Full-Stack Developer",
     company_name: "CSE Undergrad",
     icon: tekisky,
@@ -166,7 +178,9 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
+ 
 ];
+
 
 const testimonials = [
   {
