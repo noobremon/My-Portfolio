@@ -36,6 +36,9 @@ import {
 
 // Import Tekisky separately
 import tekisky from "../assets/company/tekisky.png";
+import saanp from "../assets/company/saanp.png";
+import stopwatch from "../assets/company/stopwatch.png";
+import wefit from "../assets/company/wefit.png";
 
 
 export const navLinks = [
@@ -224,17 +227,18 @@ const projects = [
         color: "white-text-gradient",
       },
       {
-        name: "node",
+        name: "next",
         color: "pink-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "express",
         color: "green-text-gradient",
       },
  
     ],
     image: project2,
     source_code_link: "https://github.com/noobremon/BloomHer",
+    live_demo_link: "https://bloom-her.vercel.app/", 
   },
   {
     name: "Alumni Association",
@@ -260,11 +264,64 @@ const projects = [
     ],
     image: gearXpert,
     source_code_link: "https://github.com/noobremon/Alumni-Association",
+    live_demo_link: "https://alumniassociation-rho.vercel.app/",
   },
   {
     name: "Functional TODO List",
     description:
       "A simple and intuitive productivity tool that helps users organize tasks, set priorities, and track daily progress. Features include task categorization, reminders, and a clean, user-friendly interface for seamless task management!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "white-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+    ],
+    image: project3,
+    source_code_link: "https://github.com/noobremon/Todo-List-Pro",
+    live_demo_link: "https://todo-list-pro-six.vercel.app/",
+  },
+  {
+    name: "Sasta We Fit",
+    description:
+      "A web-based nutrition guide that suggests healthy and balanced food options tailored to individual needs. It focuses on promoting wellness through smart eating habits, offering users curated meal suggestions for a healthier lifestyle!",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "white-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+    ],
+    image: wefit,
+    source_code_link: "https://github.com/noobremon/Sasta-WeFit",
+    live_demo_link: "https://sasta-we-fit.vercel.app/",
+  },
+  {
+    name: "Stop Watch",
+    description:
+      "A sleek and accurate digital stopwatch application for timing events with precision. It includes features like start/stop, reset, and lap-time recording, making it perfect for workouts, study sessions, or everyday time tracking!",
     tags: [
       {
         name: "react",
@@ -283,20 +340,22 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: project3,
-    source_code_link: "https://github.com/noobremon/Todo-List-Pro",
+    image: stopwatch,
+    source_code_link: "https://github.com/noobremon/Stopwatch",
+    live_demo_link: "https://stopwatch-pi-ten.vercel.app/",
+
   },
   {
-    name: "Functional TODO List",
+    name: "Snake Game",
     description:
-      "A simple and intuitive productivity tool that helps users organize tasks, set priorities, and track daily progress. Features include task categorization, reminders, and a clean, user-friendly interface for seamless task management!",
+      "A classic arcade-style game where players control a growing snake to collect food and avoid hitting walls or itself. This project showcases fundamental game logic, smooth controls, and an engaging retro gaming experience!",
     tags: [
       {
-        name: "react",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "express",
+        name: "css",
         color: "white-text-gradient",
       },
       {
@@ -308,58 +367,9 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: project3,
-    source_code_link: "https://github.com/noobremon/Todo-List-Pro",
-  },
-  {
-    name: "Functional TODO List",
-    description:
-      "A simple and intuitive productivity tool that helps users organize tasks, set priorities, and track daily progress. Features include task categorization, reminders, and a clean, user-friendly interface for seamless task management!",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "express",
-        color: "white-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-    ],
-    image: project3,
-    source_code_link: "https://github.com/noobremon/Todo-List-Pro",
-  },
-  {
-    name: "Functional TODO List",
-    description:
-      "A simple and intuitive productivity tool that helps users organize tasks, set priorities, and track daily progress. Features include task categorization, reminders, and a clean, user-friendly interface for seamless task management!",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "express",
-        color: "white-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-    ],
-    image: project3,
-    source_code_link: "https://github.com/noobremon/Todo-List-Pro",
+    image: saanp,
+    source_code_link: "https://github.com/noobremon/Snakeee",
+    live_demo_link: "https://snakeee-tau.vercel.app/",
   },
 ];
 

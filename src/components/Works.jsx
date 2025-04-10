@@ -18,42 +18,50 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_demo_link,
 }) => {
   const cardRef = useRef(null);
 
   useEffect(() => {
     const el = cardRef.current;
 
-    // ScrollTrigger for animating project cards with stagger
     gsap.fromTo(
       el,
-      {
-        opacity: 0,
-        y: 100, // Start off-screen
-      },
+      { opacity: 0, y: 100 },
       {
         opacity: 1,
         y: 0,
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",  // Trigger when the top of the element hits the bottom of the viewport
-          end: "top center",    // End when the top reaches the center of the viewport
-          scrub: true,          // Smoothly sync scroll and animation
-          markers: false,       // Set to `true` to see debug markers
+          start: "top bottom",
+          end: "top center",
+          scrub: true,
+          markers: false,
         },
       }
     );
   }, []);
 
+  const handleCardClick = () => {
+    if (live_demo_link) {
+      window.open(live_demo_link, "_blank");
+    }
+  };
+
+  const handleGithubClick = (e) => {
+    e.stopPropagation(); // 👈 prevent card click
+    window.open(source_code_link, "_blank");
+  };
+
   return (
-    <div ref={cardRef}>
+    <div ref={cardRef} onClick={handleCardClick}>
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-pointer"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -61,10 +69,9 @@ const ProjectCard = ({
             alt="project_image"
             className="w-full h-full object-cover object-left rounded-2xl"
           />
-
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={handleGithubClick}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
@@ -83,10 +90,7 @@ const ProjectCard = ({
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
+            <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
@@ -95,6 +99,8 @@ const ProjectCard = ({
     </div>
   );
 };
+
+
 
 const Works = () => {
   useEffect(() => {
