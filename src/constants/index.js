@@ -286,6 +286,81 @@ const projects = [
     image: project3,
     source_code_link: "https://github.com/noobremon/Todo-List-Pro",
   },
+  {
+    name: "Functional TODO List",
+    description:
+      "A simple and intuitive productivity tool that helps users organize tasks, set priorities, and track daily progress. Features include task categorization, reminders, and a clean, user-friendly interface for seamless task management!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "express",
+        color: "white-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+    ],
+    image: project3,
+    source_code_link: "https://github.com/noobremon/Todo-List-Pro",
+  },
+  {
+    name: "Functional TODO List",
+    description:
+      "A simple and intuitive productivity tool that helps users organize tasks, set priorities, and track daily progress. Features include task categorization, reminders, and a clean, user-friendly interface for seamless task management!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "express",
+        color: "white-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+    ],
+    image: project3,
+    source_code_link: "https://github.com/noobremon/Todo-List-Pro",
+  },
+  {
+    name: "Functional TODO List",
+    description:
+      "A simple and intuitive productivity tool that helps users organize tasks, set priorities, and track daily progress. Features include task categorization, reminders, and a clean, user-friendly interface for seamless task management!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "express",
+        color: "white-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+    ],
+    image: project3,
+    source_code_link: "https://github.com/noobremon/Todo-List-Pro",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
