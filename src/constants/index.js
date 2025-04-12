@@ -39,6 +39,8 @@ import tekisky from "../assets/company/tekisky.png";
 import saanp from "../assets/company/saanp.png";
 import stopwatch from "../assets/company/stopwatch.png";
 import wefit from "../assets/company/wefit.png";
+import cllg from "../assets/company/cllg.png";
+import iskul from "../assets/company/iskul.png";
 
 
 export const navLinks = [
@@ -156,29 +158,29 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Frontend Developer Intern",
-    company_name: "Tech Solutions Inc.",
-    icon: tekisky, // Replace with the appropriate icon if available
-    iconBg: "#E6DEDD",
-    date: "June 2022 - August 2022",
+    title: "My School Life",
+    company_name: "Aditya Academy Sr. Secondary",
+    icon: iskul, // Replace with the appropriate icon if available
+    iconBg: "#383E56",
+    date: "March 2009 - April 2023",
     points: [
-      "Developed and optimized user interfaces for web applications using React.js and Tailwind CSS.",
-      "Collaborated with backend developers to integrate APIs and ensure seamless data flow.",
-      "Conducted usability testing and implemented feedback to improve user experience.",
-      "Created reusable components to streamline development and maintain consistency across projects.",
+      "I have done my schooling both secondary and higher secondary from the same school.",
+      "Actively participated in various co-curricular activities including science exhibitions and coding competitions.",
+      "Built a strong foundation in Mathematics and Computer Science and interest in technology.",
+      "I passed my secondary and higher secondary examination with a percentage of 89% and 81% respectively.",
     ],
   },
   {
-    title: "Full-Stack Developer",
-    company_name: "CSE Undergrad",
-    icon: tekisky,
+    title: "Collegiate Life",
+    company_name: "RCC Institute of Information Technology",
+    icon: cllg,
     iconBg: "#383E56",
-    date: "August 2023 - present",
+    date: "September 2023 - July 2027",
     points: [
-      "Developing and maintaining web applications using MERN technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Currently in my second year, pursuing a Bachelor's degree in Computer Science and Engineering.",
+      "Maintaining a CGPA of 7.65(Till 3rd Semester).",
+      "Engaged in hands-on learning and building better projects.",
+      "Involved in technical clubs and hackathons, fostering collaborative and problem-solving skills.",
     ],
   },
   {
