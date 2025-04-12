@@ -66,34 +66,34 @@ const About = () => {
 
   return (
     <>
-      <div ref={headingRef} className="flex flex-col md:flex-row items-center justify-between">
-        <div className="md:w-2/3">
+      <div className="flex flex-col md:flex-row items-start justify-between gap-8">
+        <div className="md:w-2/3" ref={headingRef}>
           <p className={styles.sectionSubText}>Introduction</p>
           <h2 className={styles.sectionHeadText}>Overview.</h2>
+          <p
+            ref={paragraphRef}
+            className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          >
+            I'm a passionate frontend developer with experience in JavaScript, 
+            and expertise in frameworks like React, Node.js, and Three.js. I'm a quick learner and 
+            collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems.
+            Let's work together to bring your ideas to life!
+          </p>
         </div>
+
         <div className="relative md:w-1/3 flex justify-center items-center mt-10 md:mt-0">
           <div
             className="w-[400px] h-[300px] rounded-[50%] bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 flex justify-center items-center"
-            style={{ marginLeft: "100px" }} // Push the image further to the right
+            style={{ marginLeft: "120px" }}
           >
             <img
-              src="https://i.postimg.cc/7Zt2Pb93/Untitled-design.png" // Replace with your image URL
+              src="https://i.postimg.cc/7Zt2Pb93/Untitled-design.png"
               alt="Profile"
-              className="w-[95%] h-[95%] rounded-[50%] object-cover" // Slightly reduce the size of the image
+              className="w-[95%] h-[95%] rounded-[50%] object-cover"
             />
           </div>
         </div>
       </div>
-
-      <p
-        ref={paragraphRef}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        I'm a passionate frontend developer with experience in JavaScript, 
-        and expertise in frameworks like React, Node.js, and Three.js. I'm a quick learner and 
-        collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems.
-        Let's work together to bring your ideas to life!
-      </p>
 
       <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-10">
         {services.map((service, index) => (
