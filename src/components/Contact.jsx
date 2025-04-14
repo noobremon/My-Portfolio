@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -17,18 +17,25 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
+  // Replace these with your actual EmailJS values
+  const serviceId = "service_jrpb9mj";         // e.g. service_xxxxx
+  const templateId = "template_6xkppf9";       // e.g. template_xxxxx
+  const publicKey = "chl9UUEBs8MhFKeXC";         // e.g. ABC123xyz456
+
+  useEffect(() => {
+    if (publicKey) {
+      emailjs.init(publicKey);
+    }
+  }, [publicKey]);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
-    const serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
-    const templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
 
     if (!serviceId || !templateId || !publicKey) {
       alert("Email service is not configured properly.");
@@ -36,8 +43,8 @@ const Contact = () => {
       return;
     }
 
-    emailjs
-      .send(
+    try {
+      const response = await emailjs.send(
         serviceId,
         templateId,
         {
@@ -46,21 +53,20 @@ const Contact = () => {
           from_email: form.email,
           to_email: "rajarshidas729@gmail.com",
           message: form.message,
-        },
-        publicKey
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-          setForm({ name: "", email: "", message: "" });
-        },
-        (error) => {
-          setLoading(false);
-          console.error("Email sending error:", error);
-          alert("Ahh, something went wrong. Please try again.");
         }
       );
+
+      console.log("Email sent successfully:", response);
+      alert("Thank you! Your message has been sent.");
+      setForm({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      alert(
+        `Something went wrong while sending your message.\n\nError: ${error?.text || error?.message || "Unknown error"}`
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -91,13 +97,13 @@ const Contact = () => {
           </label>
 
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white font-medium mb-4'>Your Email</span>
             <input
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="What's your email address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               required
             />
