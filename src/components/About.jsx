@@ -87,9 +87,9 @@ const About = () => {
             style={{ marginLeft: "120px" }}
           >
             <img
-              src="https://i.postimg.cc/7Zt2Pb93/Untitled-design.png"
+              src="https://i.postimg.cc/mkgtBrR0/1726978133193.jpg"
               alt="Profile"
-              className="w-[95%] h-[95%] rounded-[50%] object-cover"
+              className="w-[98%] h-[98%] rounded-[50%] object-cover"
             />
           </div>
         </div>
