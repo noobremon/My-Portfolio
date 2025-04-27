@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
+import { StarsCanvas } from "./canvas";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,6 +67,7 @@ const About = () => {
 
   return (
     <>
+      <StarsCanvas />
       <div className="flex flex-col md:flex-row items-start justify-between gap-8">
         <div className="md:w-2/3" ref={headingRef}>
           <p className={styles.sectionSubText}>Introduction</p>

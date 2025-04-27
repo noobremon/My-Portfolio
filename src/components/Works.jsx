@@ -7,6 +7,7 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
+import { StarsCanvas } from "./canvas";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -49,7 +50,7 @@ const ProjectCard = ({
   };
 
   const handleGithubClick = (e) => {
-    e.stopPropagation(); // 👈 prevent card click
+    e.stopPropagation(); // prevent card click
     window.open(source_code_link, "_blank");
   };
 
@@ -139,6 +140,7 @@ const Works = () => {
         </p>
       </div>
 
+      <StarsCanvas />
       <div className="works-container mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5">
         {projects.map((project, index) => (
           <div key={`project-${index}`} className="project-card">
