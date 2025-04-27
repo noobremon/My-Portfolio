@@ -52,8 +52,16 @@ export const navLinks = [
     
   },
   {
-    id: "work",
-    title: "Work",
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "skills",
+    title: "Skills",
+  },
+  {
+    id: "resume",
+    title: "Resume",
   },
   {
     id: "contact",
@@ -198,7 +206,6 @@ const experiences = [
   },
  
 ];
-
 
 const testimonials = [
   {
