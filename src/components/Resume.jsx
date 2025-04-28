@@ -72,7 +72,7 @@ const Resume = () => {
               </div>
               <div className="mt-14 w-full">
                 <h3 className="text-2xl font-bold text-[#915EFF] leading-tight">Rajarshi Das</h3>
-                <p className="font-semibold text-black text-base mt-1">CS Undergrad | Frontend Dev | Amatuer Photographer</p>
+                <p className="font-semibold text-black text-base mt-1">CS Undergrad | Frontend Dev | Game Enthusiast</p>
                 <p className="text-gray-700 mt-2 text-sm leading-snug">I am Rajarshi, a CSE Undergrad from RCCIIT. I build websites and web applications with a focus on performance and accessibility. I am passionate about creating beautiful and functional user interfaces.</p>
                 <a href="mailto:rajarshidas729@gmail.com" className="block mt-2 text-[#915EFF] underline text-sm">rajarshidas729@gmail.com</a>
                 <p className="text-gray-500 text-xs mt-1">Kolkata, West Bengal</p>
@@ -84,6 +84,20 @@ const Resume = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="w-full flex justify-center mt-10">
+          <button className="px-6 py-3 bg-[#915EFF] text-white rounded shadow hover:bg-[#7f4eea] transition-all text-base font-semibold" onClick={() => window.open(resumePDF, '_blank')}>Download PDF</button>
+        </div>
+
+        {/* Attractive About Section and Quote */}
+        <div className="w-full flex flex-col items-center mt-[150px]">
+          <p className="text-lg text-white text-center max-w-2xl font-semibold mb-4">
+            Driven by curiosity and a passion for technology, I transform ideas into engaging digital experiences. Whether it’s building accessible web applications or leading teams, I thrive on challenges and continuous learning. Let’s make something amazing together!
+          </p>
+          <blockquote className="text-[#915EFF] text-center italic text-base max-w-xl border-l-4 border-[#915EFF] pl-4">
+            “The only way to do great work is to love what you do.”<br/>
+            <span className="text-white font-bold not-italic">— Steve Jobs</span>
+          </blockquote>
         </div>
 
         {/* Modal for Full Resume */}
