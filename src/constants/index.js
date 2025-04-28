@@ -81,7 +81,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "AI/Ml",
     icon: backend,
   },
   {
@@ -206,6 +206,19 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
+  {
+    title: "Experience",
+    company_name: "Till what I have done :)",
+    icon: iskul, // Replace with the appropriate icon if available
+    iconBg: "#383E56",
+    date: "March 2023 - Work In Progress",
+    points: [
+      "I have done my schooling both secondary and higher secondary from the same school.",
+      "Actively participated in various co-curricular activities including science exhibitions and coding competitions.",
+      "Built a strong foundation in Mathematics and Computer Science and interest in technology.",
+      "I passed my secondary and higher secondary examination with a percentage of 89% and 81% respectively.",
+    ],
+  },  
  
 ];
 
@@ -396,34 +409,5 @@ const projects = [
     live_demo_link: "https://snakeee-tau.vercel.app/",
   },
 ];
-
-export const techStacks = {
-  frontend: [
-    { name: "HTML 5", icon: html },
-    { name: "CSS 3", icon: css },
-    { name: "JavaScript", icon: javascript },
-    { name: "React JS", icon: reactjs },
-    { name: "Redux Toolkit", icon: redux },
-    { name: "Tailwind CSS", icon: tailwind },
-    { name: "Material Ui", icon: mui },
-    { name: "Three JS", icon: threejs },
-    { name: "framer", icon: framer },
-    { name: "gsap", icon: gsap },
-  ],
-  backend: [
-    { name: "Node JS", icon: nodejs },
-    { name: "Express Js", icon: express },
-    { name: "MongoDB", icon: mongodb },
-    { name: "MySql", icon: mysql },
-    { name: "AWS", icon: aws },
-  ],
-  other: [
-    { name: "git", icon: git },
-    { name: "figma", icon: figma },
-    { name: "Python", icon: python },
-    { name: "C", icon: c },
-    { name: "C++", icon: cpp },
-  ]
-};
 
 export { services, technologies, experiences, testimonials, projects };

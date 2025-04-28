@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { SectionWrapper } from "../hoc";
-import { techStacks } from "../constants";
+import { techStacks } from "../constants/skill";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SiC, SiCplusplus, SiPython, SiFigma, SiGit } from "react-icons/si";
@@ -121,4 +121,4 @@ const Tech = () => {
   );
 };
 
-export default SectionWrapper(Tech, "");
+export default SectionWrapper(Tech, "skills");
