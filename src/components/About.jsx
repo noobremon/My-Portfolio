@@ -68,8 +68,8 @@ const About = () => {
   return (
     <>
       <StarsCanvas />
-      <div className="flex flex-col md:flex-row items-start justify-between gap-8">
-        <div className="md:w-2/3" ref={headingRef}>
+      <div className="flex flex-col md:flex-row items-start justify-between gap-8 md:gap-20 md:flex-nowrap">
+        <div className="w-full md:w-2/3 z-10" ref={headingRef}>
           <p className={styles.sectionSubText}>Introduction</p>
           <h2 className={styles.sectionHeadText}>Overview.</h2>
           <p
@@ -83,10 +83,10 @@ const About = () => {
           </p>
         </div>
 
-        <div className="relative md:w-1/3 flex justify-center items-center mt-10 md:mt-0">
+        <div className="relative w-full md:w-1/3 flex justify-center items-center mt-10 md:mt-0 z-0">
           <div
-            className="w-[400px] h-[300px] rounded-[50%] bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 flex justify-center items-center"
-            style={{ marginLeft: "120px" }}
+            className="w-[300px] md:w-[400px] h-[220px] md:h-[300px] rounded-[50%] bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 flex justify-center items-center"
+            style={{ marginLeft: "0", marginRight: "0" }}
           >
             <img
               src="https://i.postimg.cc/mkgtBrR0/1726978133193.jpg"
