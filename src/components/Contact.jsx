@@ -18,7 +18,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   // Replace these with your actual EmailJS values
-  const serviceId = "service_jrpb9mj";         // e.g. service_xxxxx
+  const serviceId = "service_ryar4m5";         // e.g. service_xxxxx
   const templateId = "template_6xkppf9";       // e.g. template_xxxxx
   const publicKey = "chl9UUEBs8MhFKeXC";         // e.g. ABC123xyz456
 

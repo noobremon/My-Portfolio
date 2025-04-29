@@ -12,13 +12,12 @@ function formatTime(date) {
 }
 
 const ClockStatus = () => {
-  // Set initial time to Apr 29, 2025, 11:53:43 GMT+5:30
-  const [time, setTime] = useState(new Date("2025-04-29T11:53:43+05:30"));
+  // Use the actual system time for live updates
+  const [time, setTime] = useState(new Date());
 
   useEffect(() => {
-    // Update every second
     const interval = setInterval(() => {
-      setTime((prev) => new Date(prev.getTime() + 1000));
+      setTime(new Date());
     }, 1000);
     return () => clearInterval(interval);
   }, []);
