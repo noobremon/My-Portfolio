@@ -283,15 +283,15 @@ const projects = [
       "A community-driven platform designed to connect alumni with their alma mater and fellow graduates. It supports event planning, networking opportunities, job postings, and updates, fostering lifelong relationships and professional growth.",
     tags: [
       {
-        name: "html",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "javascript",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "nodejs",
         color: "pink-text-gradient",
       },
       {
@@ -302,6 +302,32 @@ const projects = [
     image: gearXpert,
     source_code_link: "https://github.com/noobremon/Alumni-Association",
     live_demo_link: "https://alumniassociation-rho.vercel.app/",
+  },
+  {
+    name: "Gym Website",
+    description:
+      "A fully responsive gym website featuring service details, trainer profiles, class schedules, and a contact form. It offers a clean design and smooth navigation across all devices.The site is optimized for all devices and offers an engaging user experience.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "white-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+    ],
+    image: saanp,
+    source_code_link: "https://github.com/noobremon/Gymmmmm",
+    live_demo_link: "https://gymmmmm.vercel.app/",
   },
   {
     name: "Functional TODO List",
@@ -343,11 +369,11 @@ const projects = [
         color: "white-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "expressjs",
         color: "green-text-gradient",
       },
     ],
@@ -361,33 +387,6 @@ const projects = [
       "A sleek and accurate digital stopwatch application for timing events with precision. It includes features like start/stop, reset, and lap-time recording, making it perfect for workouts, study sessions, or everyday time tracking!",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "express",
-        color: "white-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-    ],
-    image: stopwatch,
-    source_code_link: "https://github.com/noobremon/Stopwatch",
-    live_demo_link: "https://stopwatch-pi-ten.vercel.app/",
-
-  },
-  {
-    name: "Snake Game",
-    description:
-      "A classic arcade-style game where players control a growing snake to collect food and avoid hitting walls or itself. This project showcases fundamental game logic, smooth controls, and an engaging retro gaming experience!",
-    tags: [
-      {
         name: "html",
         color: "blue-text-gradient",
       },
@@ -396,18 +395,20 @@ const projects = [
         color: "white-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "python",
         color: "green-text-gradient",
       },
     ],
-    image: saanp,
-    source_code_link: "https://github.com/noobremon/Snakeee",
-    live_demo_link: "https://snakeee-tau.vercel.app/",
+    image: stopwatch,
+    source_code_link: "https://github.com/noobremon/Stopwatch",
+    live_demo_link: "https://stopwatch-pi-ten.vercel.app/",
+
   },
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };
