@@ -213,10 +213,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "March 2023 - Work In Progress",
     points: [
-      "I have done my schooling both secondary and higher secondary from the same school.",
-      "Actively participated in various co-curricular activities including science exhibitions and coding competitions.",
-      "Built a strong foundation in Mathematics and Computer Science and interest in technology.",
-      "I passed my secondary and higher secondary examination with a percentage of 89% and 81% respectively.",
+      "Proud contributor to Hacktoberfest and GSSoC — coding for a cause and learning every commit!",
+      "From Smart India Hackathon to Smart Bharat Hackathon, I’ve tackled real-world challenges with real impact.",
+      "Built, collaborated, and innovated — my journey through SIH, SBH, Hacktoberfest, and GSSoC has shaped me into a purpose-driven developer.",
+      "Hackathons and open-source aren't just events — they’re where I grow, solve, and shine!",
     ],
   },  
  
