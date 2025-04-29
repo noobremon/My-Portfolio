@@ -78,7 +78,7 @@ const Resume = () => {
                 <p className="text-gray-500 text-xs mt-1">Kolkata, West Bengal</p>
                 <div className="mt-4">
                   <span className="font-bold text-black">WORK EXPERIENCE</span>
-                  <p className="text-gray-800 text-sm">Project Admin || GSSOC</p>
+                  <p className="text-gray-800 text-sm">SIH || SBH || GSSOC || Hacktober || Freelance</p>
                 </div>
                 <button className="mt-4 px-4 py-2 bg-[#915EFF] text-white rounded shadow hover:bg-[#7f4eea] transition-all text-sm w-full font-semibold" onClick={e => {e.stopPropagation(); window.open(resumePDF, '_blank');}}>Download PDF</button>
               </div>
