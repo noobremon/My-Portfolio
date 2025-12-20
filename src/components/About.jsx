@@ -76,8 +76,8 @@ const About = () => {
             ref={paragraphRef}
             className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
           >
-            I'm a passionate frontend developer with experience in JavaScript, 
-            and expertise in frameworks like React, Node.js, and Three.js. I'm a quick learner and 
+            I'm a passionate frontend developer with experience in JavaScript,
+            and expertise in frameworks like React, Node.js, and Three.js. I'm a quick learner and
             collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems.
             Let's work together to bring your ideas to life!
           </p>
@@ -85,13 +85,13 @@ const About = () => {
 
         <div className="relative w-full md:w-1/3 flex justify-center items-center mt-10 md:mt-0 z-0">
           <div
-            className="w-[300px] md:w-[400px] h-[220px] md:h-[300px] rounded-[50%] bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 flex justify-center items-center"
+            className="w-[280px] md:w-[320px] h-[350px] md:h-[400px] rounded-[20px] bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 flex justify-center items-center"
             style={{ marginLeft: "0", marginRight: "0" }}
           >
             <img
               src="https://i.postimg.cc/mkgtBrR0/1726978133193.jpg"
               alt="Profile"
-              className="w-[98%] h-[98%] rounded-[50%] object-cover"
+              className="w-[97%] h-[97%] rounded-[20px] object-cover"
             />
           </div>
         </div>
