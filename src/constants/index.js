@@ -14,6 +14,7 @@ import {
   pcbProject,
   railwayProject,
   toolboxProject,
+  linkClick,
   mysql,
   express,
   aws,
@@ -381,30 +382,30 @@ const projects = [
     live_demo_link: "https://tool-box-1.onrender.com/",
   },
   {
-    name: "Link Click",
+    name: "Link Clickkk",
     description:
-      "A smart link management and task tracking application designed to streamline personal workflows and digital bookmarking. It allows users to organize links, manage tasks, and track progress efficiently.",
+      "A universal social media downloader app for fetching video and audio content across multiple platforms with auto-detection, bulk downloads, high quality processing, and local file management.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
+      },
+      {
+        name: "flask",
+        color: "green-text-gradient",
+      },
+      {
+        name: "yt-dlp",
+        color: "pink-text-gradient",
       },
       {
         name: "tailwind",
         color: "white-text-gradient",
       },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "express",
-        color: "pink-text-gradient",
-      },
     ],
-    image: project3,
+    image: linkClick,
     source_code_link: "https://github.com/noobremon/Link-Clickkk.git",
-    live_demo_link: "https://github.com/noobremon/Link-Clickkk.git",
+    live_demo_link: "https://link-clickkk.vercel.app/",
   },
 ];
 

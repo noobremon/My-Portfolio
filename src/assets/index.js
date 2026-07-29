@@ -35,6 +35,7 @@ import cpp from './tech/cpp.png';
 import pcbProject from './pcb_project.png';
 import railwayProject from './railway_project.png';
 import toolboxProject from './toolbox_project.png';
+import linkClick from './link_click.png';
 
 export {
   logo,
@@ -52,6 +53,7 @@ export {
   pcbProject,
   railwayProject,
   toolboxProject,
+  linkClick,
   mysql,
   express,
   aws,
