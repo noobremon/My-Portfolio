@@ -10,6 +10,7 @@ import {
   css,
   gearXpert,
   project2,
+  project3,
   pcbProject,
   railwayProject,
   toolboxProject,
@@ -252,7 +253,7 @@ const projects = [
   {
     name: "BloomHer",
     description:
-      "A health-focused mobile app tailored for women with PCOD/PCOS to monitor their menstrual cycles, symptoms, and lifestyle factors. It offers personalized insights, reminders, and expert-backed wellness tips to support hormonal balance and reproductive health.",
+      "A health-focused mobile app tailored for women with PCOD/PCOS to monitor their menstrual cycles, symptoms, and lifestyle factors. It offers personalized insights, reminders, and expert wellness tips to support reproductive health.",
     tags: [
       {
         name: "react",
@@ -270,7 +271,6 @@ const projects = [
         name: "express",
         color: "green-text-gradient",
       },
- 
     ],
     image: project2,
     source_code_link: "https://github.com/noobremon/BloomHer",
@@ -279,7 +279,7 @@ const projects = [
   {
     name: "Alumni Association",
     description:
-      "A community-driven platform designed to connect alumni with their alma mater and fellow graduates. It supports event planning, networking opportunities, job postings, and updates, fostering lifelong relationships and professional growth.",
+      "A community platform designed to connect alumni with their alma mater and fellow graduates. It supports event planning, career networking, job postings, and university updates, fostering lifelong professional growth.",
     tags: [
       {
         name: "react",
@@ -305,7 +305,7 @@ const projects = [
   {
     name: "PCB Defect Detection System",
     description:
-      "An AI-powered Automated Optical Inspection (AOI) system designed to detect defects in Printed Circuit Boards using computer vision. The system analyzes PCB images through advanced image processing techniques to identify faults such as missing components, misalignment, and soldering defects. It supports training with reference images and performs real-time inspection to enhance manufacturing quality control.",
+      "An AI-powered optical inspection system designed to detect defects in Printed Circuit Boards using computer vision. It performs real-time image analysis to identify component faults and enhance quality control.",
     tags: [
       {
         name: "python",
@@ -331,7 +331,7 @@ const projects = [
   {
     name: "Indian Railways Video Surveillance System",
     description:
-      "A smart IP-based Video Surveillance System designed for railway coaches and locomotives to enhance passenger safety and operational monitoring. The system integrates ONVIF cameras, local edge storage, and GPS-based timestamping for secure video recording. It also incorporates AI-driven driver monitoring and facial detection to support intelligent safety analytics.",
+      "A smart IP-based Video Surveillance System for railway coaches to enhance passenger safety. It integrates ONVIF cameras, local edge storage, GPS timestamping, and AI facial detection for security analytics.",
     tags: [
       {
         name: "react",
@@ -357,7 +357,7 @@ const projects = [
   {
     name: "ToolBox",
     description:
-      "A modern, full-stack web application providing 40+ essential developer tools in one place. From text manipulation and color conversion to AI-powered content generation, ToolBox streamlines your workflow with a beautiful, responsive interface.",
+      "A modern full-stack web application providing 40+ essential developer tools in one place. From text manipulation and color conversion to AI content generation, ToolBox streamlines daily developer workflow.",
     tags: [
       {
         name: "react",
@@ -380,7 +380,32 @@ const projects = [
     source_code_link: "https://github.com/noobremon/Tool-Box",
     live_demo_link: "https://tool-box-1.onrender.com/",
   },
-  
+  {
+    name: "Link Click",
+    description:
+      "A smart link management and task tracking application designed to streamline personal workflows and digital bookmarking. It allows users to organize links, manage tasks, and track progress efficiently.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "white-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: project3,
+    source_code_link: "https://github.com/noobremon/Link-Clickkk.git",
+    live_demo_link: "https://github.com/noobremon/Link-Clickkk.git",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
