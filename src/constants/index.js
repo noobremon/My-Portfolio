@@ -11,6 +11,9 @@ import {
   gearXpert,
   project2,
   project3,
+  pcbProject,
+  railwayProject,
+  toolboxProject,
   mysql,
   express,
   aws,
@@ -38,9 +41,6 @@ import {
 
 // Import Tekisky separately
 import tekisky from "../assets/company/tekisky.png";
-import saanp from "../assets/company/saanp.png";
-import stopwatch from "../assets/company/stopwatch.png";
-import wefit from "../assets/company/wefit.png";
 import cllg from "../assets/company/cllg.png";
 import iskul from "../assets/company/iskul.png";
 
@@ -304,30 +304,30 @@ const projects = [
     live_demo_link: "https://alumniassociation-rho.vercel.app/",
   },
   {
-    name: "Gym Website",
+    name: "PCB Defect Detection System",
     description:
-      "A fully responsive gym website featuring service details, trainer profiles, class schedules, and a contact form. It offers a clean design and smooth navigation across all devices.The site is optimized for all devices and offers an engaging user experience.",
+      "An AI-powered Automated Optical Inspection (AOI) system designed to detect defects in Printed Circuit Boards using computer vision. The system analyzes PCB images through advanced image processing techniques to identify faults such as missing components, misalignment, and soldering defects. It supports training with reference images and performs real-time inspection to enhance manufacturing quality control.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "css",
+        name: "opencv",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ai-ml",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "computer-vision",
         color: "white-text-gradient",
       },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
     ],
-    image: saanp,
-    source_code_link: "https://github.com/noobremon/Gymmmmm",
-    live_demo_link: "https://gymmmmm.vercel.app/",
+    image: pcbProject,
+    source_code_link: "https://github.com/noobremon/PCB-main",
+    live_demo_link: "https://pcb-main.onrender.com/",
   },
   {
     name: "Functional TODO List",
@@ -356,57 +356,56 @@ const projects = [
     live_demo_link: "https://todo-list-pro-six.vercel.app/",
   },
   {
-    name: "Sasta We Fit",
+    name: "Indian Railways Video Surveillance System",
     description:
-      "A web-based nutrition guide that suggests healthy and balanced food options tailored to individual needs. It focuses on promoting wellness through smart eating habits, offering users curated meal suggestions for a healthier lifestyle!",
+      "A smart IP-based Video Surveillance System designed for railway coaches and locomotives to enhance passenger safety and operational monitoring. The system integrates ONVIF cameras, local edge storage, and GPS-based timestamping for secure video recording. It also incorporates AI-driven driver monitoring and facial detection to support intelligent safety analytics.",
     tags: [
       {
-        name: "html",
+        name: "react",
         color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "white-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "expressjs",
-        color: "green-text-gradient",
-      },
-    ],
-    image: wefit,
-    source_code_link: "https://github.com/noobremon/Sasta-WeFit",
-    live_demo_link: "https://sasta-we-fit.vercel.app/",
-  },
-  {
-    name: "Stop Watch",
-    description:
-      "A sleek and accurate digital stopwatch application for timing events with precision. It includes features like start/stop, reset, and lap-time recording, making it perfect for workouts, study sessions, or everyday time tracking!",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "white-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "green-text-gradient",
       },
       {
         name: "python",
         color: "green-text-gradient",
       },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ai-surveillance",
+        color: "white-text-gradient",
+      },
     ],
-    image: stopwatch,
-    source_code_link: "https://github.com/noobremon/Stopwatch",
-    live_demo_link: "https://stopwatch-pi-ten.vercel.app/",
-
+    image: railwayProject,
+    source_code_link: "https://github.com/noobremon/Ir-Railvision",
+    live_demo_link: "https://ir-railvision-frontend.onrender.com/",
+  },
+  {
+    name: "ToolBox",
+    description:
+      "A modern, full-stack web application providing 40+ essential developer tools in one place. From text manipulation and color conversion to AI-powered content generation, ToolBox streamlines your workflow with a beautiful, responsive interface.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "white-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: toolboxProject,
+    source_code_link: "https://github.com/noobremon/Tool-Box",
+    live_demo_link: "https://tool-box-1.onrender.com/",
   },
   
 ];
