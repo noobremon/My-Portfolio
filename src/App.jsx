@@ -6,20 +6,18 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary bg-hero-pattern bg-cover bg-no-repeat bg-center bg-fixed'>
+      <div className='relative z-0 bg-primary bg-hero-pattern bg-cover bg-no-repeat bg-center bg-fixed min-h-screen'>
+        <StarsCanvas />
         <Navbar />
         <Hero />
-        <div className='relative z-0'>
-          <About />
-          <Experience />
-          <Tech />
-          <Works />
-          <Feedbacks />
-          <Resume />
-          <Contact />
-          <StarsCanvas />
-          <Footer/>
-        </div>
+        <About />
+        <Experience />
+        <Tech />
+        <Works />
+        <Feedbacks />
+        <Resume />
+        <Contact />
+        <Footer />
       </div>
     </BrowserRouter>
   );
