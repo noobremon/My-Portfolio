@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import resumePDF from "../assets/resume.pdf";
-import { StarsCanvas } from "./canvas";
 
 const codeSnippet = `import React, { useRef, useEffect } from 'react';
 import './CustomCursor.css';
@@ -44,7 +43,6 @@ const Resume = () => {
 
   return (
     <section className="w-full flex flex-col items-center py-32 relative min-h-screen" id="resume">
-      <StarsCanvas />
       <div className="relative z-10 w-full flex flex-col items-center">
         <h2 className="text-4xl font-bold text-[#915EFF] mb-6 text-center animate-pulse">My Resume</h2>
         <p className="text-lg text-white mb-8 text-center max-w-2xl">Explore my professional journey, skills, education, and achievements. Click the card to view my full resume!</p>

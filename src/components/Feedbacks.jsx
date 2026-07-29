@@ -5,7 +5,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { testimonials } from "../constants";
-import { StarsCanvas } from "./canvas";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -41,7 +40,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
   return (
     <div
       ref={cardRef}
-      className="bg-black-200 p-10 rounded-3xl w-full max-w-[320px]"
+      className="bg-black-200/80 backdrop-blur-md p-10 rounded-3xl w-full max-w-[320px]"
     >
       <p className="text-white font-black text-[48px]">"</p>
 
@@ -71,9 +70,8 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
 
 const Feedbacks = () => {
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px] relative`}>
-      <StarsCanvas />
-      <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}>
+    <div className={`mt-12 bg-black-100/60 backdrop-blur-sm rounded-[20px] relative`}>
+      <div className={`bg-tertiary/60 backdrop-blur-sm rounded-2xl ${styles.padding} min-h-[300px]`}>
         <div>
           <p className={styles.sectionSubText}>What others say</p>
           <h2 className={styles.sectionHeadText}>Testimonials.</h2>
