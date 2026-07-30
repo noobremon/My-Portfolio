@@ -32,6 +32,7 @@ import thirdTestimonial from './third testimonial.webp'
 import python from './tech/python.png';
 import c from './tech/c.png';
 import cpp from './tech/cpp.png';
+import typescript from './tech/typescript.png';
 import pcbProject from './pcb_project.png';
 import railwayProject from './railway_project.png';
 import toolboxProject from './toolbox_project.png';
@@ -76,4 +77,5 @@ export {
   python,
   c,
   cpp,
+  typescript,
 };

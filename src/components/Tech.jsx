@@ -3,9 +3,50 @@ import { SectionWrapper } from "../hoc";
 import { techStacks } from "../constants/skill";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SiC, SiCplusplus, SiPython, SiFigma, SiGit } from "react-icons/si";
+import { SiC, SiCplusplus, SiPython, SiFigma, SiGit, SiNextdotjs, SiFlask, SiOpencv } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const renderTechIcon = (tech) => {
+  if (tech.name === "Next JS" || tech.name === "Next.js") {
+    return <SiNextdotjs size={64} color="#FFFFFF" className="tech-icon w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" />;
+  }
+  if (tech.name === "Flask") {
+    return <SiFlask size={64} color="#FFFFFF" className="tech-icon w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" />;
+  }
+  if (tech.name === "Java") {
+    return <FaJava size={64} color="#ED8B00" className="tech-icon w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" />;
+  }
+  if (tech.name === "OpenCV") {
+    return <SiOpencv size={64} color="#5C3EE8" className="tech-icon w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" />;
+  }
+  if (tech.name === "Python") {
+    return <SiPython size={64} color="#3776AB" className="tech-icon w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" />;
+  }
+  if (tech.name === "git") {
+    return <SiGit size={64} color="#F05032" className="tech-icon w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" />;
+  }
+  if (tech.name === "figma") {
+    return <SiFigma size={64} color="#A259FF" className="tech-icon w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" />;
+  }
+  if (tech.name === "C") {
+    return <SiC size={64} color="#00599C" className="tech-icon w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" />;
+  }
+  if (tech.name === "C++") {
+    return <SiCplusplus size={64} color="#00599C" className="tech-icon w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" />;
+  }
+  if (tech.icon) {
+    return (
+      <img
+        src={tech.icon}
+        alt={tech.name}
+        className="tech-icon w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+      />
+    );
+  }
+  return null;
+};
 
 const Tech = () => {
   useEffect(() => {
@@ -31,7 +72,7 @@ const Tech = () => {
   }, []);
 
   return (
-    <section>
+    <section className="tech-icons-wrapper">
       <h2 className="text-center text-3xl font-bold mb-10 text-white">My Tech Skills</h2>
       <div className="flex flex-col md:flex-row justify-center gap-10">
         {/* Frontend */}
@@ -40,11 +81,7 @@ const Tech = () => {
           <div className="flex flex-row flex-wrap justify-center gap-6">
             {techStacks.frontend.map((tech) => (
               <div className="w-24 h-24 group relative flex items-center justify-center" key={tech.name}>
-                <img
-                  src={tech.icon}
-                  alt={tech.name}
-                  className="tech-icon w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                />
+                {renderTechIcon(tech)}
                 <span className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full bg-black bg-opacity-80 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-10">
                   {tech.name}
                 </span>
@@ -58,11 +95,7 @@ const Tech = () => {
           <div className="flex flex-row flex-wrap justify-center gap-6">
             {techStacks.backend.map((tech) => (
               <div className="w-24 h-24 group relative flex items-center justify-center" key={tech.name}>
-                <img
-                  src={tech.icon}
-                  alt={tech.name}
-                  className="tech-icon w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                />
+                {renderTechIcon(tech)}
                 <span className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full bg-black bg-opacity-80 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-10">
                   {tech.name}
                 </span>
@@ -71,49 +104,17 @@ const Tech = () => {
           </div>
         </div>
         {/* Other */}
-        <div className="flex-1 flex flex-col items-center mt-0">
-          <h3 className="text-xl font-semibold text-center mb-8 text-[#915EFF]">Other</h3>
-          <div className="flex flex-col items-center">
-            {/* First row: git, figma, python */}
-            <div className="flex flex-row justify-center gap-6 mb-6">
-              {["git", "figma", "Python"].map((name) => {
-                const tech = techStacks.other.find(t => t.name === name);
-                if (!tech) return null;
-                return (
-                  <div className="w-24 h-24 group relative flex items-center justify-center" key={tech.name}>
-                    {tech.name === "Python" ? (
-                      <SiPython size={64} color="#3776AB" className="transition-transform duration-300 group-hover:scale-110" />
-                    ) : tech.name === "git" ? (
-                      <SiGit size={64} color="#F05032" className="transition-transform duration-300 group-hover:scale-110" />
-                    ) : tech.name === "figma" ? (
-                      <SiFigma size={64} color="#A259FF" className="transition-transform duration-300 group-hover:scale-110" />
-                    ) : null}
-                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full bg-black bg-opacity-80 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-10">
-                      {tech.name}
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
-            {/* Second row: C, C++ */}
-            <div className="flex flex-row justify-center gap-10">
-              {["C", "C++"].map((name) => {
-                const tech = techStacks.other.find(t => t.name === name);
-                if (!tech) return null;
-                return (
-                  <div className="w-24 h-24 group relative flex items-center justify-center" key={tech.name}>
-                    {tech.name === "C" ? (
-                      <SiC size={64} color="#00599C" className="transition-transform duration-300 group-hover:scale-110" />
-                    ) : tech.name === "C++" ? (
-                      <SiCplusplus size={64} color="#00599C" className="transition-transform duration-300 group-hover:scale-110" />
-                    ) : null}
-                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full bg-black bg-opacity-80 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-10">
-                      {tech.name}
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
+        <div className="flex-1 flex flex-col items-center">
+          <h3 className="text-xl font-semibold text-center mb-4 text-[#915EFF]">Other</h3>
+          <div className="flex flex-row flex-wrap justify-center gap-6">
+            {techStacks.other.map((tech) => (
+              <div className="w-24 h-24 group relative flex items-center justify-center" key={tech.name}>
+                {renderTechIcon(tech)}
+                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full bg-black bg-opacity-80 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-10">
+                  {tech.name}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

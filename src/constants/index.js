@@ -147,10 +147,6 @@ const technologies = [
     icon: express,
   },
   {
-    name: "AWS",
-    icon: aws,
-  },
-  {
     name: "MongoDB",
     icon: mongodb,
   },
