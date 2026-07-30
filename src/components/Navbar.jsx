@@ -59,13 +59,11 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full flex justify-center bg-primary/70 pt-2 pb-1" style={{marginTop: '60px'}}>
+      <div className="w-full flex justify-center bg-transparent pt-2 pb-1" style={{marginTop: '60px'}}>
         <ClockStatus />
       </div>
       <nav
-        className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${
-          scrolled ? "bg-primary" : "bg-transparent"
-        }`}
+        className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-transparent`}
       >
         <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
           <Link
