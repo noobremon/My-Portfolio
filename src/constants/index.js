@@ -15,6 +15,7 @@ import {
   railwayProject,
   toolboxProject,
   linkClick,
+  carrent,
   mysql,
   express,
   aws,
@@ -402,6 +403,58 @@ const projects = [
     image: linkClick,
     source_code_link: "https://github.com/noobremon/Link-Clickkk.git",
     live_demo_link: "https://link-clickkk.vercel.app/",
+  },
+  {
+    name: "EventFlow",
+    description:
+      "A production-quality mini event management platform built with Next.js, Express, MongoDB, and JWT authentication. Allows users to seamlessly create, manage, and discover events with authentication and clean dashboard capabilities.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "express",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "jwt",
+        color: "white-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/noobremon/EventFlow.git",
+    live_demo_link: "https://event-platform-frontend-xl9s.onrender.com",
+  },
+  {
+    name: "Where Is My Medicine",
+    description:
+      "A real-time geo-localized prescription coordination and stock-matching ecosystem connecting patients, local pharmacies, and administrators with spatial Geohash queries.",
+    tags: [
+      {
+        name: "react-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "expo",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "white-text-gradient",
+      },
+    ],
+    image: project3,
+    source_code_link: "https://github.com/noobremon/where-is-my-medicine.git",
+    live_demo_link: "https://github.com/noobremon/where-is-my-medicine.git",
   },
 ];
 

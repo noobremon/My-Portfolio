@@ -37,6 +37,7 @@ import pcbProject from './pcb_project.png';
 import railwayProject from './railway_project.png';
 import toolboxProject from './toolbox_project.png';
 import linkClick from './link_click.png';
+import carrent from './carrent.png';
 
 export {
   logo,
@@ -51,6 +52,7 @@ export {
   gearXpert,
   project2,
   project3,
+  carrent,
   pcbProject,
   railwayProject,
   toolboxProject,

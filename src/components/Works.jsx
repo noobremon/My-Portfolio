@@ -62,7 +62,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl w-full max-w-[360px] cursor-pointer flex flex-col justify-between h-full"
+        className="bg-tertiary p-5 rounded-2xl w-full max-w-[360px] cursor-pointer flex flex-col justify-between h-full min-h-[490px]"
       >
         <div>
           <div className="relative w-full h-[230px]">
@@ -86,8 +86,8 @@ const ProjectCard = ({
           </div>
 
           <div className="mt-5">
-            <h3 className="text-white font-bold text-[22px] min-h-[60px] flex items-center leading-snug">{name}</h3>
-            <p className="mt-2 text-secondary text-[14px] leading-[22px] min-h-[110px]">{description}</p>
+            <h3 className="text-white font-bold text-[22px] h-[64px] min-h-[64px] flex items-center leading-tight line-clamp-2">{name}</h3>
+            <p className="mt-2 text-secondary text-[14px] leading-[22px] h-[110px] min-h-[110px] line-clamp-5 overflow-hidden">{description}</p>
           </div>
         </div>
 
