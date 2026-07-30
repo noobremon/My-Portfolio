@@ -58,12 +58,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <>
-      <div className="w-full flex justify-center bg-transparent pt-2 pb-1" style={{marginTop: '60px'}}>
-        <ClockStatus />
-      </div>
+    <header className="fixed top-0 left-0 w-full z-20 pointer-events-none bg-transparent">
       <nav
-        className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-transparent`}
+        className={`${styles.paddingX} w-full flex items-center py-4 bg-transparent border-none shadow-none outline-none pointer-events-auto`}
+        style={{ background: 'transparent' }}
       >
         <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
           <Link
@@ -138,7 +136,11 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </>
+
+      <div className="w-full flex justify-center pt-1 pb-1 pointer-events-auto bg-transparent" style={{ background: 'transparent' }}>
+        <ClockStatus />
+      </div>
+    </header>
   );
 };
 
