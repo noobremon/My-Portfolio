@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import ClockStatus from "./ClockStatus";
 
 // ✨ Role text list
 const roles = [ "SSTUDENT" ,"LLEARNER", "DDEVELOPER", "CCONTRIBUTER"];
@@ -136,10 +135,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
-      <div className="w-full flex justify-center pt-1 pb-1 pointer-events-auto bg-transparent" style={{ background: 'transparent' }}>
-        <ClockStatus />
-      </div>
     </header>
   );
 };

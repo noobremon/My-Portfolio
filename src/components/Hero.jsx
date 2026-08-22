@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { StarsCanvas } from "./canvas";
+import ClockStatus from "./ClockStatus";
 
 const Hero = () => {
 
@@ -18,6 +19,10 @@ const Hero = () => {
         </div>
 
         <div className="mt-28 md:mt-5 lg:5">
+          <div className="mb-3 pointer-events-auto inline-block">
+            <ClockStatus />
+          </div>
+
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>Rajarshi</span>
           </h1>

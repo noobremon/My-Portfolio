@@ -23,15 +23,15 @@ const ClockStatus = () => {
   }, []);
 
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-3 text-center w-full px-2">
-      <span className="font-semibold text-white text-xs sm:text-base">
-        Kolkata, West Bengal {formatTime(time)} GMT+5:30
+    <div className="inline-flex items-center gap-2 sm:gap-3 py-1.5 px-3 sm:px-4 rounded-full bg-[#151030]/80 border border-[#915eff]/30 backdrop-blur-md shadow-sm">
+      <span className="font-medium text-white-100 text-xs sm:text-sm tracking-wide">
+        Kolkata, West Bengal &bull; {formatTime(time)} GMT+5:30
       </span>
-      <span className="relative flex h-3 w-3">
+      <span className="relative flex h-2.5 w-2.5">
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-        <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
       </span>
-      <span className="text-green-400 font-medium text-xs sm:text-base">Open to work</span>
+      <span className="text-green-400 font-medium text-xs sm:text-sm">Open to work</span>
     </div>
   );
 };
