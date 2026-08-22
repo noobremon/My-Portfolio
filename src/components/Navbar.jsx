@@ -57,7 +57,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-20 pointer-events-none bg-transparent">
+    <header className="absolute top-0 left-0 w-full z-20 pointer-events-none bg-transparent">
       <nav
         className={`${styles.paddingX} w-full flex items-center py-4 bg-transparent border-none shadow-none outline-none pointer-events-auto`}
         style={{ background: 'transparent' }}
